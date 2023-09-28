@@ -28,17 +28,9 @@ services:
         caPort: 13000
         customRuntimeConfig:
           command:
-            - yarn
+            - bash
           args:
-            - install
-            - '&&'
-            - yarn
-            - nocobase
-            - install
-            - '--lang=zh-CN'
-            - '&&'
-            - yarn
-            - dev
+            - start.sh
       triggers:
         - name: httpTrigger
           type: http
