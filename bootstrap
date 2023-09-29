@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ./nocobase
+
 echo $API_BASE_PATH
 
 source .env
