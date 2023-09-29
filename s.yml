@@ -79,7 +79,7 @@ services:
         description: nocobase deploy on FC
         timeout: 60
         memorySize: 3072
-        runtime: custom
+        runtime: nodejs16
         caPort: 13000
         instanceConcurrency: 100
         codeUri: ./nocobase
