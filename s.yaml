@@ -39,7 +39,7 @@ services:
         memorySize: 1536
         runtime: custom
         layers:
-          - nodejs16
+          - acs:fc:cn-hangzhou:1718686634877710:layers/nodejs16/versions/1
         caPort: 80
         instanceConcurrency: 30
         codeUri: ./init
