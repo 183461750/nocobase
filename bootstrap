@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo $API_BASE_PATH
+
+source .env
+
+echo $API_BASE_PATH
+
 yarn install
 
 yarn nocobase install --lang=zh-CN
