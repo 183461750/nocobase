@@ -38,6 +38,8 @@ services:
         timeout: 120
         memorySize: 1536
         runtime: custom
+        layers:
+          - nodejs16
         caPort: 80
         instanceConcurrency: 30
         codeUri: ./init
