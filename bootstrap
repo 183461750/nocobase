@@ -1,5 +1,7 @@
+#!/bin/bash
+
 yarn install
 
 yarn nocobase install --lang=zh-CN
 
-yarn dev
+nohup yarn dev &
