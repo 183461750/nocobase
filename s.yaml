@@ -37,9 +37,7 @@ services:
         handler: index.handler
         timeout: 120
         memorySize: 1536
-        runtime: custom
-        layers:
-          - acs:fc:cn-hangzhou:1718686634877710:layers/nodejs16/versions/1
+        runtime: nodejs16
         caPort: 80
         instanceConcurrency: 30
         codeUri: ./init
