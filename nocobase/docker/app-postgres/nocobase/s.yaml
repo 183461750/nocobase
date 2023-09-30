@@ -1,0 +1,27 @@
+edition: 1.0.0
+
+services:
+  nocobaseService:
+    component: fc
+    props:
+      region: cn-hangzhou
+      service:
+        name: nocobaseService
+        role: acs:ram::1718686634877710:role/aliyunfcdefaultrole
+      function:
+        name: nocobaseFc
+        runtime: custom-container
+        timeout: 60
+        memorySize: 1024
+        caPort: 13000
+        customContainerConfig:
+          image: registry.cn-hangzhou.aliyuncs.com/fa/nocobase:v1-fa
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+              - PUT
