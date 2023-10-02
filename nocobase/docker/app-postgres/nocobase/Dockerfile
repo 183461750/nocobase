@@ -5,7 +5,7 @@ ARG LOCAL_STORAGE_BASE_URL=/storage/uploads
 #COPY . /app/nocobas
 COPY . .
 
-expose 80
+EXPOSE 80
 
 
 # echo iu461750 | docker login -u 183461750@qq.com --password-stdin registry.cn-hangzhou.aliyuncs.com
